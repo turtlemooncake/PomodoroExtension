@@ -1,0 +1,158 @@
+<html>
+    <style>
+        .backdrop{
+            border-radius: 25px;
+            border: 2px solid 	#2F4F4F;
+            background: #F08080;
+            padding: 20px; 
+            width: 200px;
+            height: 125px; 
+        }
+        .button1 {
+            border-radius: 12px;
+            background: #2F4F4F; 
+            border: none;
+            color: white;
+            padding: 10px 10px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            font-family: "optima", "sans-serif";
+        }
+        .button2 {
+            border-radius: 12px;
+            background: #2F4F4F; 
+            border: none;
+            color: white;
+            padding: 10px 10px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            font-family: "optima", "sans-serif";
+        }
+        .moveWork {
+            margin: 0;
+            position: absolute;
+            top: 74%;
+            left: 20%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .moveBreak {
+            margin: 0;
+            position: absolute;
+            top: 74%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .moveRestart {
+            margin: 0;
+            position: absolute;
+            top: 74%;
+            left: 80%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .moveWorkHeader {
+            margin: 0;
+            position: absolute;
+            top: 24%;
+            left: 20%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .moveBreakHeader {
+            margin: 0;
+            position: absolute;
+            top: 24%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .moveWorkCount {
+            margin: 0;
+            position: absolute;
+            top: 48%;
+            left: 20%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .moveBreakCount {
+            margin: 0;
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .moveMsg {
+            margin: 0;
+            position: absolute;
+            top: 89%;
+            left: 35%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .headerStyle {
+            font-family: "optima", "sans-serif";
+            font-size: 21;
+            color:	#2F4F4F;
+        }
+        .countStyle {
+            font-family: "optima", "sans-serif";
+            font-size: 20;
+            color:	#2F4F4F;
+        }
+        .fontMsg {
+            font-family: "optima", "sans-serif";
+            color: #2F4F4F; 
+            font-size: 13;
+        }
+        .moveGif {
+            margin: 0;
+            position: absolute;
+            top: 40%;
+            left: 80%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .gifStyle {
+            width: 2 px;
+            height: auto;
+        }
+    </style>
+    <div class="backdrop">
+        <div class="moveWork">
+            <button id="work" class="button1">25 min</button>
+        </div>
+        <div class="moveBreak">
+            <button id="break" class="button1">5 min</button>
+        </div>
+        <div class="moveRestart">
+            <button id="restart" class="button2">Restart Count</button>
+        </div>
+        <div class="moveWorkHeader">
+            <h1 class="headerStyle">work</h1>
+        </div>
+        <div class="moveBreakHeader">
+            <h1 class="headerStyle">break</h1>
+        </div>
+        <div class="moveWorkCount">
+            <p id="worktime" size="1" maxlength="1" class="countStyle">9</p> 
+        </div>
+        <div class="moveBreakCount">
+            <p id="breaktime" size="1" maxlength="1" class="countStyle">9</p>
+        </div>
+        <div class="moveMsg">
+            <p id="work message" class="fontMsg"></p>
+            <p id="break message" class="fontMsg"></p>
+        </div>
+        <div class="moveGif">
+            <img src="tomatomove.gif" alt="tomatoes" class="gifStyle"/>
+        </div>
+    </div>
+    <script src="popup.js"></script>   
+</html>
